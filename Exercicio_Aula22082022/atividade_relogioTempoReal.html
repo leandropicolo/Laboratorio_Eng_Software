@@ -1,4 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo - Data Javascript</title>
+        
+    </head>
 
+    <body onload="tempo()">
+        <script type="text/javascript">
+            function tempo(){
+                let hoje = new Date();
+                let h = hoje.getHours();
+                let m = hoje.getMinutes();
+                let s = hoje.getSeconds();
+                document.getElementById('atual').innerHTML="Horário em Tempo Real: [" + h + ":" + m + ":" + s + "]";
+                setTimeout('tempo()', 1000)
+            }
+
+        </script>
+        <div id="atual"></div>
+    </body>
+</html>
     
 
 

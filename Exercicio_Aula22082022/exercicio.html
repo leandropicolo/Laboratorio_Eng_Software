@@ -7,10 +7,11 @@
             let date = new Date();
             let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
             document.write(date.toLocaleDateString('pt-BR', options));
-
-                //referencia
-                //https://developer.mozilla.org/pt-br/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
-
+            let hoje = new Date();
+            let h = hoje.getHours();
+            let m = hoje.getMinutes();
+            let s = hoje.getSeconds();
+            document.write(", " + h + ":" + m + ":" + s);
 
         </script>
     </head>
