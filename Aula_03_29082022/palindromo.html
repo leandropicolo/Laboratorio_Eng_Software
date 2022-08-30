@@ -3,13 +3,24 @@
 <html>
  <head>
     <title>Palindromo</title>
-    <script type="text/javascript">
-        
-
-    </script>
+    
  </head>
  <body>
+    <p>Verificar se é palindromo:</p>
+    <input id="nome" placeholder="insira uma palavra">
+    <script type="text/javascript">
+        let palavra = document.getElementById('nome').value;
+        let invertida = "";
+        let palindromo = "";
+        for(let i = palavra.lenght - 1; i >= 0; i--){
+            invertida += palavra[i];
+        }
 
+        palindromo = (palavra === invertida) ? "SIM" : "NÃO";
+
+        alert(palindromo);
+
+    </script>
  </body>
 </html>
 
