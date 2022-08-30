@@ -4,17 +4,24 @@
  <head>
     <title>Apostila JavaScript Progressivo</title>
     <script type="text/javascript">
-        function Verifica(){
+        
+        function Verifica(param){
             let palavra = document.getElementById('item').value;
-            let array = palavra.split('');
-            
-            
+            let tam = palavra.lenght;
+            for (let i = 0; i < tam/2; i++) {
+                if (palavra[i] != palavra[tam - 1 - i]) {
+                    return false;
+                    document.write('false');
+                }
+            }
+            return true;
+            document.write('true');
         }
 
     </script>
  </head>
  <body>
-  Digite uma palavra para verificar se é palíndromo: <input type="text" id="item" onchange="Palindromo()">
+  Digite uma palavra para verificar se é palíndromo: <input type="text" id="item" onchange="Verifica()">
  </body>
 </html>
 
