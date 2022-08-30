@@ -4,6 +4,7 @@
  <head>
     <title>Apostila JavaScript Progressivo</title>
     <script type="text/javascript">
+        document.getElementById('item').addEventListener("click", Verifica());
         
         function Verifica(param){
             let palavra = document.getElementById('item').value;
@@ -21,7 +22,7 @@
     </script>
  </head>
  <body>
-  Digite uma palavra para verificar se é palíndromo: <input type="text" id="item" onchange="Verifica()">
+  Digite uma palavra para verificar se é palíndromo: <input type="text" id="item">
  </body>
 </html>
 
