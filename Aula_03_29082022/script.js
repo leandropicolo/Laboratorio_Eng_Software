@@ -10,6 +10,6 @@ function Palindromo(){
 			if (texto == palindromo) {
 			   alert("A PALAVRA " + texto + " É UM PALÍNDROMO");
 			} else {
-			   alert("INFELIZMENTE, NÃO SOU UM PALÍNDROMO");
+			   alert("A PALAVRA " + texto + " NÃO É UM PALÍNDROMO");
 			}
 		}
