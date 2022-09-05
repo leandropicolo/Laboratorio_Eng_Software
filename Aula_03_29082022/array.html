@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Array - Inserção Dinamica</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		
+	</head>
+	<body class="container-fluid border center-block" style="margin: 30px">
+
+		<form>
+			<label for="palavra">Palavras inseridas na lista ordenada:</label>
+			<input type="text" name="nome" id="palavra">
+			<button onclick="Insere()" id="botao">Inserir</button>
+		</form>
+		
+		<script>
+			document.body.onload = Insere;
+
+			function Insere () {
+			  var palavra_nova = document.createElement("novo");
+			  var conteudo_novo = document.getElementById("");
+			  palavra_nova.appendChild(conteudo_novo); 
+
+			  var divAtual = document.getElementById("palavra");
+			  document.body.insertBefore(palavra_nova, divAtual);
+			}
+			
+			document.write(divAtual).value;
+		</script> 
+	</body>
+</html>
