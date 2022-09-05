@@ -10,15 +10,18 @@
     <input id="nome" placeholder="insira uma palavra">
     <script type="text/javascript">
         let palavra = document.getElementById('nome').value;
+        palavra = palavra.split(palavra);
+        alert(palavra);
+
         let invertida = "";
         let palindromo = "";
         for(let i = palavra.lenght - 1; i >= 0; i--){
             invertida += palavra[i];
         }
+        alert(invertida);
 
         palindromo = (palavra === invertida) ? "SIM" : "NÃO";
-
-        alert(palindromo);
+        alert("A palavra é palindromo:" + palindromo);
 
     </script>
  </body>
