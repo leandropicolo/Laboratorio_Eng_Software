@@ -23,14 +23,16 @@
 				let ol = document.createElement("OL"); 
 
 				lista.forEach(item => {
+				
 					let li = document.createElement("LI");
-					let addtexto = document.createTextNode(item);
+					let addtexto = document.createTextNode(li);
 					li.appendChild(addtexto);
 					ol.appendChild(addtexto);
 				});
 
 				lista.sort();
 				document.body.appendChild(ol);
+				
 			});
 			
 		</script>
