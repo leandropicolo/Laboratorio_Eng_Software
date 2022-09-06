@@ -6,22 +6,25 @@
     
  </head>
  <body>
-    <p>Verificar se é palindromo:</p>
-    <input id="nome" placeholder="insira uma palavra">
-    <script type="text/javascript">
-        let palavra = document.getElementById('nome').value;
-        palavra = palavra.split(palavra);
-        alert(palavra);
+    <p>Palavra para verificar se é palindromo:</p>
+    <input id="palavra" type="text" placeholder="Digite sua palavra">
+    <script>
+        function Palindromo(){
+            const texto = document.getElementById("palavra");
+            texto = texto.toString().split();
+            const explicacao = ` Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a \n propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita.`
 
-        let invertida = "";
-        let palindromo = "";
-        for(let i = palavra.lenght - 1; i >= 0; i--){
-            invertida += palavra[i];
+            const reverso = texto.split('').reverse().join(''); 
+
+            console.log( `${explicacao} \n`);
+
+            if(texto === reverso) {
+            console.log(`A palavra ${texto} é um palíndromo!`);
+            } else {
+            console.log(`A palavra ${texto} não é um palíndromo!`);
+            }
         }
-        alert(invertida);
-
-        palindromo = (palavra === invertida) ? "SIM" : "NÃO";
-        alert("A palavra é palindromo:" + palindromo);
+        palavra.addEventListener("click", Palindromo, false);
 
     </script>
  </body>
