@@ -8,26 +8,33 @@
 		
 	</head>
 	<body class="container-fluid border center-block" style="margin: 30px">
-
-		<form>
-			<label for="palavra">Palavras inseridas na lista ordenada:</label>
-			<input type="text" name="nome" id="palavra">
-			<button onclick="Insere()" id="botao">Inserir</button>
-		</form>
-		
+		<p>Click para inserir a palavra na lista.</p>
+		<input type="text" id="texto" placeholder="Insira a palavra">
+		<button id="botao">Try it</button>
 		<script>
-			document.body.onload = Insere;
+			let b = document.getElementById("botao");
+			b.addEventListener('click', function (){
+				let palavra = document.getElementById("texto").value;
+				
+				let lista = [];
+				lista.push(palavra.toString());
+				
 
-			function Insere () {
-			  var palavra_nova = document.createElement("novo");
-			  var conteudo_novo = document.getElementById("");
-			  palavra_nova.appendChild(conteudo_novo); 
+				let ol = document.createElement("OL"); 
 
-			  var divAtual = document.getElementById("palavra");
-			  document.body.insertBefore(palavra_nova, divAtual);
-			}
+				lista.forEach(item => {
+					let li = document.createElement("LI");
+					let addtexto = document.createTextNode(item);
+					li.appendChild(addtexto);
+					ol.appendChild(addtexto);
+				});
+
+				lista.sort();
+				document.body.appendChild(ol);
+			});
 			
-			document.write(divAtual).value;
-		</script> 
+		</script>
+
+		
 	</body>
 </html>
