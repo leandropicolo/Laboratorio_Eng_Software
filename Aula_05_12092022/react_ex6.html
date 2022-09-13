@@ -1,0 +1,29 @@
+<!--PAGINA BASICA HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Incorporando Expressoes em JSX - Parte 1</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!--Script babel-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!--type define o uso do babel no script-->
+    <script type="text/babel">
+        function tick(){
+            const element = (
+                <div>
+                    <h1>Hello, world!</h1>
+                    <h2>It is {new Date().toLocaleTimeString()}.</h2>
+                </div>
+            );
+            ReactDOM.render(element, document.getElementById('root'));
+        }
+        setInterval(tick, 1000);
+    </script>
+    
+</body>
+</html>
