@@ -13,19 +13,24 @@
   }
 }
 
+.paragrafo {
+  color:rgb(27, 56, 3);
+}
+
 .App-header {
-  background-color: #353a46;
+  background-color: #8696bb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(253, 251, 251);
+  font-size: calc(12px + 1vmin);
+  color: rgb(218, 14, 14);
 }
 
 .App-link {
-  color: #2592b3;
+  color: #354c53;
+  font-size: calc(10px + 1vmin);
 }
 
 @keyframes App-logo-spin {

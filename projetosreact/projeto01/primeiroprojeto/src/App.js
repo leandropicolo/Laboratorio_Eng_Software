@@ -6,9 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h1>
           Venha para o vestibular da Fatec
-        </p>
+        </h1>
+        <p className="paragrafo">Aproveite essa oportunidade e garanta o seu futuro</p>
+        <p className="paragrafo">Corra pois as vagas são limitadas</p>
         <a
           className="App-link"
           href="https://www.vestibularfatec.com.br/home/"
@@ -17,6 +19,15 @@ function App() {
           title="Vem pra Fatec"
         >
           Faça sua inscrição aqui
+        </a>
+        <a
+          className="App-link"
+          href="https://www.vestibularfatec.com.br/classificacao/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Classificação"
+        >
+          Ver classificação
         </a>
       </header>
     </div>
