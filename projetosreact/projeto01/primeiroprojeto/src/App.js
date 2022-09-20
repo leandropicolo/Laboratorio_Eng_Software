@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './fatec.png';
 import './App.css';
 
 function App() {
@@ -7,15 +7,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Venha para o vestibular da Fatec
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.vestibularfatec.com.br/home/"
           target="_blank"
           rel="noopener noreferrer"
+          title="Vem pra Fatec"
         >
-          Learn React
+          Faça sua inscrição aqui
         </a>
       </header>
     </div>
