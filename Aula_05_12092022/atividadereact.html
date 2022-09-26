@@ -16,9 +16,12 @@
         function tick(){
                 let frase = "Venha estudar na Fatec";
                 let texto = "";
+                document.write(texto);
+                
                 for(let i = 0;  i < frase.length; i++) {
-                    texto = texto + frase[i];
-                    document.write(texto);
+                    document.write(frase[i]);
+                    i++;
+
                     setTimeOut(1000);
                 }
                 ReactDOM.render(element, document.getElementById('root'));
