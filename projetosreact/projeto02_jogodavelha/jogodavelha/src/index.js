@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+//seguir o passo a passo do site: https://pt-br.reactjs.org/tutorial/tutorial.html//
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
