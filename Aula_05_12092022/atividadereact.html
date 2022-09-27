@@ -13,21 +13,19 @@
     <div id="root"></div>
     <!--type define o uso do babel no script-->
     <script type="text/babel">
-        function tick(){
-                let frase = "Venha estudar na Fatec";
-                let texto = "";
+        let frase = "Venha estudar na Fatec";
+        let texto = "";
+        let i = 0;
+        function funcao(){
+            if (i < frase.length){
+                texto = texto + frase[i];
                 document.write(texto);
-                
-                for(let i = 0;  i < frase.length; i++) {
-                    document.write(frase[i]);
-                    i++;
-
-                    setTimeOut(1000);
-                }
-                ReactDOM.render(element, document.getElementById('root'));
-
+                i = i + 1;
+                ReactDOM.render(element, document.getElementById('root'));    
+            }
         }
-        setInterval(tick, 1000);
+
+        setInterval(funcao, 1000);
     </script>
     
 </body>
